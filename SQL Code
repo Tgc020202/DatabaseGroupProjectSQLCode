@@ -376,7 +376,7 @@ VALUES('assignment', 18.80, 'Default', '5cm x 2cm', 'Default', '1001');
 
 ## -----------------------------------------------------------------------------------------------------------------------
 
-# Update
+# Update (Not Compulsory)
 ## Update some infomation into Product_order entity
 UPDATE Product_order 
 SET payment_id = '1001' 
