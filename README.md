@@ -10,4 +10,6 @@ The members:
 - Abdul Hadi Bin Yahaya
 - Muhammad Nabil bin Malip
 
-I will show all the SQL Code in this folder.
+I will show all the SQL Code to create all the entities and insert the information for all entities in this folder.
+- SQL code file
+- SQL code in sql file format
