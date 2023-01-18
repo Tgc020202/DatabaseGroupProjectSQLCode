@@ -1,9 +1,12 @@
-
+## if here got some problems just remove this symbol(`)
+## if use the oracle sql, just skip these three steps.
 DROP DATABASE IF EXISTS `WIA2001GroupProject`;
 CREATE DATABASE `WIA2001GroupProject`;
 USE `WIA2001GroupProject`;
 
-# The language we used in SQL code is Oracle SQL
+
+
+# The language we used in SQL code is Oracle SQL / MYSQL
 ## We have 20 entities
 
 # Create 20 Entities
@@ -58,7 +61,9 @@ overtime_rate FLOAT NOT NULL
 );
 
 ## Create Position entity
-Create Table `Position`( 
+## if here got some problem try to use "Create Table `Position`( " and replace it
+## because in oracle not accept (`) symbol,but in mysql we need to add (`) symbol to separate entity name
+Create Table Position( 
 position_id VARCHAR(3) NOT NULL PRIMARY KEY, 
 position_name VARCHAR(64) NOT NULL, 
 CONSTRAINT fk_Salary_position_name FOREIGN KEY(position_name)REFERENCES Salary_position(position_name) 
@@ -192,7 +197,7 @@ payment_id VARCHAR(6),
 CONSTRAINT fk_rubber_stamp_payment_id FOREIGN KEY(payment_id) REFERENCES Payment(payment_id) 
 );
 
-## -----------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------
 
 # Insert
 ## Insert into Users entity
@@ -379,4 +384,4 @@ VALUES('picture.png', 15.00, 'Default', '1001');
 INSERT INTO Service_rubber_stamp 
 VALUES('assignment', 18.80, 'Default', '5cm x 2cm', 'Default', '1001');
 
-## -----------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------
