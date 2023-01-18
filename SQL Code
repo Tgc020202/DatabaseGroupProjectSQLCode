@@ -264,7 +264,7 @@ VALUES('P04', 'Salesman');
 INSERT INTO Position 
 VALUES('P05', 'Stationery Worker'); 
 INSERT INTO Position 
-VALUES('P06', 'Cargo Mover); 
+VALUES('P06', 'Cargo Mover'); 
 INSERT INTO Position 
 VALUES('P07', 'Name Card Servicer'); 
 INSERT INTO Position 
@@ -389,7 +389,7 @@ WHERE payment_id = '2';
 UPDATE Product_order 
 SET order_id = '1' 
 WHERE order_id = '1000'; 
-UPDATE Product_order Before: 34
+UPDATE Product_order
 SET order_id = '2' 
 WHERE order_id = '1001';
 
